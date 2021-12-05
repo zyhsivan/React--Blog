@@ -1,0 +1,155 @@
+@import "~normalize.css";
+@import "~antd/dist/antd.css";
+
+/* 全局样式 */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f6f6f6;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  outline: none;
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+/* 清楚浮动 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 多字数显示... */
+.rest {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 自定义字体 */
+@font-face {
+  font-family: "myFont1";
+  src: url("../font/Baliung-3.woff");
+}
+
+.comm-left {
+  background-color: #fff;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  border: 1px solid #eee;
+}
+.comm-box {
+  background-color: #fff;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  border: 1px solid #eee;
+}
+.comm-main {
+  margin-top: 0.5rem;
+}
+.list-title {
+  font-size: 1.3rem;
+  color: #1e90ff;
+  padding: 0 0.5rem;
+}
+.list-context {
+  color: #777;
+  padding: 0.5rem;
+}
+.list-icon {
+  padding: 0.5rem 0;
+  color: #aaa;
+}
+.list-icon span {
+  display: inline-block;
+  padding: 0 10px;
+}
+.bread-div {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  background-color: #e1f0ff;
+}
+.detailed-title {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+.center {
+  text-align: center;
+}
+.detailed-content {
+  padding: 1.3rem;
+  font-size: 1rem;
+}
+/* 代码块 */
+code {
+  margin: 0 5px;
+  padding: 2px 5px;
+  background-color: lavenderblush;
+  color: currentcolor;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+/* 代码块 */
+pre > code {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #333;
+  border-radius: 5px;
+  overflow-y: auto;
+  color: #fff;
+  font-family: Menlo, monospace;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  height: 37.5rem;
+}
